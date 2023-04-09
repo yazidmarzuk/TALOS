@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="rosserial_arduino" type="serial_node.py" name="serial_arduino">
+    <param name="port" value="/dev/ttyUSB0" />
+  </node>
+
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen"/>
+
+</launch>
